@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  meu-job:
+    runs-on: ububtu-latest 
+
+    steps:
+      - run: echo "The job was automatically triggered by a event."
+      - run: echo " This job is nowrunning on a server by GirHub!"
+      
