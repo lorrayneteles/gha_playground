@@ -6,7 +6,7 @@ on:
 
 jobs:
   meu-job:
-    runs-on: ububtu-latest 
+    runs-on: ubuntu-latest 
 
     steps:
       - run: echo "The job was automatically triggered by a event."
