@@ -12,3 +12,8 @@ jobs:
       - run: echo "The job was automatically triggered by a event."
       - run: echo " This job is nowrunning on a server by GirHub!"
       
+  segundo-job:
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - run : echo " Hoje é $(date)."
