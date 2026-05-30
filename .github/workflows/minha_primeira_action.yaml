@@ -1,3 +1,5 @@
+name: "[AUTOMATICA] Minha primeira Action Bonita!!"
+
 on:
   push:
     branches:
@@ -9,15 +11,17 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps:
-      - run: |
+      - name: Primeiro Step
+        run: |
           echo "The job was automatically triggered by a event."
-          echo " This job is nowrunning on a server by GirHub!"
+          echo "This job is nowrunning on a server by GirHub!"
       
   segundo-job:
     runs-on: ubuntu-latest 
 
     steps: 
-      - run: |
+      - name: Segundo Step
+        run: |
           echo "Hoje é $(date)."
           ls -la
 
