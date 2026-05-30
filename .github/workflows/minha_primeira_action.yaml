@@ -20,7 +20,7 @@ jobs:
           ls -la
       - name: Git checkout (faz o clone do repo)
         uses: actions/checkout@v6
-      - names: "Verifica se o repo foi baixado"
+      - name: "Verifica se o repo foi baixado"
         run: ls -la
 
       
