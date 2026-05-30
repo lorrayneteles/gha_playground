@@ -18,9 +18,9 @@ jobs:
           echo "Hoje é $(TZ='America/Sao_Paulo' date + '%d/%m/%y %H:%M:%S')"
           echo "Meu repositorio se chama: ${{ github.repository }}"
           ls -la
-      -name: Git checkout (faz o clone do repo)
+      - name: Git checkout (faz o clone do repo)
        uses: actions/checkout@v6
-      -names: "Verifica se o repo foi baixado"
+      - names: "Verifica se o repo foi baixado"
        run: ls -la
 
       
